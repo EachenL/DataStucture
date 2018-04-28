@@ -1,8 +1,0 @@
-//
-// Created by markning on 4/28/18.
-//
-
-#ifndef DATASTUCTURE_LINEARLIST_H
-#define DATASTUCTURE_LINEARLIST_H
-
-#endif //DATASTUCTURE_LINEARLIST_H

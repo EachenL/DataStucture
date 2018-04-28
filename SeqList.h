@@ -1,7 +1,7 @@
 //
 // Created by markning on 4/28/18.
 //
-#include "SeqList.h"
+
 #include <malloc.h>
 #include <cstdlib>
 
