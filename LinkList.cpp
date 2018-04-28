@@ -56,7 +56,7 @@ void TraLinkList(LinkList L){
     p = L;
     while(p->next != NULL){
         cout << p->data;
-
+        p = p->next;
     }
 }
 
