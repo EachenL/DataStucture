@@ -29,7 +29,7 @@ Status LinkListIns(LinkList L, int i, Elemtype e){
     return OK;
 }
 /**************************************************************/
-Status LinkListDel(LinkList &L, int i, Elemtype &e){
+Status LinkListDel(LinkList L, int i, Elemtype &e){
     LinkList p = L;
     int j = 0;
     while(p->next && j < i-1){
@@ -69,6 +69,7 @@ void TraLinkList(LinkList L){
         cout << p->data;
         p = p->next;
     }
+    cout << p->data;
 }
 
 
