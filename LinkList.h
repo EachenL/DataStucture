@@ -9,5 +9,7 @@ typedef struct LNode{
 }LNode, *LinkList;
 #ifndef DATASTUCTURE_LINKLIST_H
 #define DATASTUCTURE_LINKLIST_H
-
+Status LinkListIns(LinkList L, int i, Elemtype e);
+void CreateLinkList(LinkList &L, int n);
+void TraLinkList(LinkList L);
 #endif //DATASTUCTURE_LINKLIST_H

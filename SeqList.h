@@ -4,7 +4,7 @@
 
 #include <malloc.h>
 #include <cstdlib>
-
+#include <iostream>
 #define LIST_INIT_SIZE 100
 #define LISTINCREMENT 10
 #define TRUE 1
@@ -13,7 +13,7 @@
 #define ERROR 0
 #define INFEASIBLE -1
 #define OVERFLOW -2
-
+using namespace std;
 typedef int Elemtype;
 typedef int Status;
 

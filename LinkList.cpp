@@ -13,7 +13,7 @@ Status LinkGetElem(LinkList L, int i, Elemtype &e){
     return OK;
 }
 /*************************************************************/
-Status LinkListIns(LinkList &L, int i, Elemtype e){
+Status LinkListIns(LinkList L, int i, Elemtype e){
     LinkList p;
     int j = 0;
     p = L;
@@ -39,7 +39,26 @@ Status LinkListDel(LinkList &L, int i, Elemtype &e){
     if(!(p->next) || j > i-1) return ERROR;
 
 }
+/******************************************************/
+void CreateLinkList(LinkList &L, int n){
+    L = (LinkList)malloc(sizeof(LNode));
+    L->next = NULL;
+    for(int i = n; i > 0; --i){
+        LinkList p = (LinkList)malloc(sizeof(LNode));
+        cin >> p->data;
+        p->next = L->next;
+        L->next = p;
 
+    }
+}
+void TraLinkList(LinkList L){
+    LinkList p;
+    p = L;
+    while(p->next != NULL){
+        cout << p->data;
+
+    }
+}
 
 
 
