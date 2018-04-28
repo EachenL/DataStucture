@@ -37,23 +37,34 @@ Status LinkListDel(LinkList &L, int i, Elemtype &e){
         ++j;
     }
     if(!(p->next) || j > i-1) return ERROR;
+    LinkList q = p->next;
+    p->next = q->next;
+    e = q->data;
+    free(q);
+    return OK;
 
 }
 /******************************************************/
 void CreateLinkList(LinkList &L, int n){
     L = (LinkList)malloc(sizeof(LNode));
     L->next = NULL;
+    LinkList tmp;
+    tmp = L;
     for(int i = n; i > 0; --i){
         LinkList p = (LinkList)malloc(sizeof(LNode));
         cin >> p->data;
-        p->next = L->next;
-        L->next = p;
+        tmp->next = p;
+        tmp = p;
 
     }
 }
+/*************************************************************/
+
+/**************************************************/
 void TraLinkList(LinkList L){
     LinkList p;
-    p = L;
+    p = L->next;
+
     while(p->next != NULL){
         cout << p->data;
         p = p->next;
