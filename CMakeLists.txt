@@ -3,5 +3,5 @@ project(DataStucture)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp LinearList.cpp LinearList.h SeqList.cpp SeqList.h)
 add_executable(DataStucture ${SOURCE_FILES})
