@@ -3,11 +3,6 @@
 //
 
 #include "SeqList.h"
-#include <malloc.h>
-#include <cstdlib>
-
-
-
 
 /**********************************************/
 Status InitSeqList(SeqList &L){

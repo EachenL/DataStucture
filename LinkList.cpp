@@ -90,7 +90,7 @@ void TraLinkList(LinkList L){
     cout << p->data;
 }
 
-
+//跳过静态链表
 
 
 

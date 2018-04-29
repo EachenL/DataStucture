@@ -1,7 +1,7 @@
 //
 // Created by markning on 4/28/18.
 //
-
+//#include "LinkList.h"
 #include <malloc.h>
 #include <cstdlib>
 #include <iostream>
@@ -9,6 +9,7 @@
 #define LISTINCREMENT 10
 #define TRUE 1
 #define FALSE 0
+
 #define OK 1
 #define ERROR 0
 #define INFEASIBLE -1
