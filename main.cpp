@@ -11,5 +11,6 @@ int main() {
     LinkListIns(La, 3, 3);
     MergeLinkList(La, Lb, Lc);
     TraLinkList(Lc);
+   // free(Lb);
     return 0;
 }

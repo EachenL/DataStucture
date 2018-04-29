@@ -75,7 +75,7 @@ void MergeLinkList(LinkList &La, LinkList &Lb, LinkList &Lc){
             pb = pb->next;//pb-pointer move back one unit
         }
         pc->next = pa?pa:pb;//insert remaining elem
-        free(Lb);
+        //free(Lb);why can't use it?????( double free or corruption (fasttop): )
     }
 }
 /**************************************************/
