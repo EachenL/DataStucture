@@ -59,7 +59,25 @@ void CreateLinkList(LinkList &L, int n){
     }
 }
 /*************************************************************/
-
+void MergeLinkList(LinkList &La, LinkList &Lb, LinkList &Lc){
+    LinkList pa, pb, pc;
+    pa = La->next; pb = Lb->next;//not necessary to new pa
+    Lc = pc = La;//Lc is La now
+    while(pa && pb){
+        if(pa->data <= pb->data){//compare and sorting when pb-data is more larger
+            pc->next = pa;//sorted from small to large, make the next node is pa
+            pc = pa; //move the pointer to the current final node
+            pa = pa->next;//pa-pointer move back one unit, now it points the next node
+        }
+        else{
+            pc->next = pb;//when pa-data is larger, make the next node is pb
+            pc = pb;//move the pointer to the current final node
+            pb = pb->next;//pb-pointer move back one unit
+        }
+        pc->next = pa?pa:pb;//insert remaining elem
+        free(Lb);
+    }
+}
 /**************************************************/
 void TraLinkList(LinkList L){
     LinkList p;

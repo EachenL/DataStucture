@@ -3,9 +3,13 @@
 
 
 int main() {
-    LinkList L;
-    CreateLinkList(L,5);
-    LinkListIns(L, 3, 3);
-    TraLinkList(L);
+    LinkList La;
+    LinkList Lb;
+    LinkList Lc;
+    CreateLinkList(La, 5);
+    CreateLinkList(Lb, 5);
+    LinkListIns(La, 3, 3);
+    MergeLinkList(La, Lb, Lc);
+    TraLinkList(Lc);
     return 0;
 }

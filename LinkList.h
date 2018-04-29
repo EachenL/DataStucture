@@ -12,6 +12,7 @@ typedef struct LNode{
 Status LinkListIns(LinkList L, int i, Elemtype e);
 void CreateLinkList(LinkList &L, int n);
 void TraLinkList(LinkList L);
+void MergeLinkList(LinkList &La, LinkList &Lb, LinkList &Lc);
 Status LinkListDel(LinkList L, int i, Elemtype &e);
 Status LinkGetElem(LinkList L, int i, Elemtype &e);
 #endif //DATASTUCTURE_LINKLIST_H
