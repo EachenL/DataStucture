@@ -3,7 +3,7 @@
 //
 
 #include "DobLinkList.h"
-/*****************************************************************************/
+/*************************Duble-Link-Insert*******************************/
 Status DubLinkIns(DubLinkList &L, int i, Elemtype e){
     DubLinkList p, q, t;
     p = L;
@@ -20,11 +20,11 @@ Status DubLinkIns(DubLinkList &L, int i, Elemtype e){
 
 
 }
-/******************************************************************************/
+/****************************Double-Link-Delete*****************************/
 Status DubLinkDel(DubLinkList &L, int i){
 
 }
-/******************************************************************************/
+/*****************************Double-Link-Create********************************/
 Status DubLinkCreate(DubLinkList &L){
     L = (DubLinkList)malloc(sizeof(DubNode));
     L->prior = NULL;
@@ -46,12 +46,30 @@ Status DubLinkCreate(DubLinkList &L){
 
     return OK;
 }
-/*****************************************************************************/
+/***************************Double-Link-Merge******************************/
 Status DubLinkMerge(DubLinkList &La, DubLinkList &Lb);
 Status DubLinkDes(DubLinkList &L);
-Status DubLinkGetElem(DubLinkList &L, int i);
-Status DubLinkLocElem(DubLinkList &L, Elemtype e);
-/*****************************************************************************/
+/***************************Double-Link-Get-Elem*****************************/
+Status DubLinkGetElem(DubLinkList &L, int i){
+    DubLinkList p = L;
+    int q = 0;
+    while(q != i){
+        p = p->next;
+        q++;
+    }
+    return(p->data);
+}
+/*************************Double-Link-Locate-Elem*****************************/
+int DubLinkLocElem(DubLinkList &L, Elemtype e){
+    DubLinkList p = L;
+    int i = 0;
+    while(p->data != e){
+        p = p->next;
+        i++;
+    }
+    return i;
+}
+/******************Double-Link-Traverse*************************************/
 Status DubLinkTra(DubLinkList &L){
     DubLinkList p = L;
     while(p->next != NULL){
@@ -60,7 +78,7 @@ Status DubLinkTra(DubLinkList &L){
     }
     return OK;
 }
-/*****************************************************************************/
+/******************************Double-Link-Length*********************************/
 int DubLinkLength(DubLinkList &L){
     DubLinkList p = L;
     int i = 1;
@@ -70,3 +88,4 @@ int DubLinkLength(DubLinkList &L){
     }
     return i;
 }
+//跳过一元多项式的表示和相加

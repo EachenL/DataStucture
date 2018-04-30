@@ -1,4 +1,4 @@
-#include "SeqList.h"
+#include "head.h"
 
 //
 // Created by markning on 4/28/18.

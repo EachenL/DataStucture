@@ -16,5 +16,7 @@ int main() {
     DubLinkList La;
     DubLinkCreate(La);
     DubLinkTra(La);
+    cout << DubLinkLocElem(La, 3);
+    cout << DubLinkGetElem(La, DubLinkLocElem(La, 3));
     return 0;
 }

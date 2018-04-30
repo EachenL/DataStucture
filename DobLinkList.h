@@ -1,4 +1,4 @@
-#include "SeqList.h"
+#include "head.h"
 
 //
 // Created by markning on 4/29/18.
@@ -16,7 +16,7 @@ Status DubLinkCreate(DubLinkList &L);
 Status DubLinkMerge(DubLinkList &La, DubLinkList &Lb);
 Status DubLinkDes(DubLinkList &L);
 Status DubLinkGetElem(DubLinkList &L, int i);
-Status DubLinkLocElem(DubLinkList &L, Elemtype e);
+int DubLinkLocElem(DubLinkList &L, Elemtype e);
 Status DubLinkTra(DubLinkList &L);
 int DubLinkLength(DubLinkList &L);
 #endif //DATASTUCTURE_DOBLINKLIST_H
