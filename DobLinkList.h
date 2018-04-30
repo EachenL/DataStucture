@@ -18,5 +18,5 @@ Status DubLinkDes(DubLinkList &L);
 Status DubLinkGetElem(DubLinkList &L, int i);
 Status DubLinkLocElem(DubLinkList &L, Elemtype e);
 Status DubLinkTra(DubLinkList &L);
-Status DubLinkLength(DubLinkList &L);
+int DubLinkLength(DubLinkList &L);
 #endif //DATASTUCTURE_DOBLINKLIST_H
