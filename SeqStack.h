@@ -13,4 +13,12 @@ Status InitStack(SeqStack &S);
 Status StackGetTop(SeqStack S, SElemType &e);
 Status StackPush(SeqStack &S, SElemType e);
 Status StackPop(SeqStack &S, SElemType &e);
+void Conversion();
+Status DestroyStack();
+Status StackTraverse();
+
+
+
+Status ClearStack();
+
 #endif //DATASTUCTURE_SEQSTACK_H
