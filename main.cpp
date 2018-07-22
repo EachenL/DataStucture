@@ -2,7 +2,7 @@
 //#include "LinkList.h"
 #include "DobLinkList.h"
 #include "SeqStack.h"
-
+#include "Queue.h"
 int main() {
 //    LinkList La;
 //    LinkList Lplub;
@@ -18,6 +18,6 @@ int main() {
 //    DubLinkTra(La);
 //    cout << DubLinkLocElem(La, 3);
 //    cout << DubLinkGetElem(La, DubLinkLocElem(La, 3));
-    Conversion();
+
     return 0;
 }
