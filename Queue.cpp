@@ -20,6 +20,7 @@ Status EnQueue(Queue &Q, Status e){
     }
     if (Q.head != NULL){
        *Q.tail++ = e;
+
     }
 }
 Status GetHead(Queue &Q, Status e){
@@ -60,5 +61,61 @@ Status DeQueue(Queue &Q, Status e){
 void QueueTraverse(Queue &Q){
     while(Q.tail-Q.head >= 0){
         cout << *Q.tail--;
+    }
+}
+void QueueTest(){
+    Queue Q;
+    int e = 1;
+    while(e){
+        cout << "please choose the option"<<endl;
+        cout << "1. InitQueue"<<endl << "2. DestroyQueue"<<endl <<"3. ClearQueue"<<endl;
+        cout << "4. QueueEmpty"<<endl << "5. QueueLength"<<endl << "6. GetHead"<<endl;
+        cout << "7. EnQueue"<<endl << "8. DeQueue"<<endl << "9. QueueTraverse"<<endl;
+        cin >> e;
+        switch (e){
+            case 1:
+
+                InitQueue(Q);
+                cout << "your queue has been initial"<<endl;
+                break;
+            case 2:
+                DestroyQueue(Q);
+                cout << "your queue has been destroyed"<<endl;
+                break;
+            case 3:
+                ClearQueue(Q);
+                cout << "your queue has been cleared"<<endl;
+                break;
+            case 4:
+                QueueEmpty(Q);
+                break;
+            case 5:
+                cout << "the queue length is " <<QueueLength(Q)<<endl;
+                break;
+            case 6:
+                int a;
+                GetHead(Q,a);
+                cout <<"the head elem is " << a<<endl;
+                break;
+            case 7:
+                int b;
+                cout << "please input the number u want insert"<<endl;
+                cin >> b;
+                EnQueue(Q,b);
+                break;
+            case 8:
+                int c;
+                DeQueue(Q,c);
+                cout << "the head elem is " << c<<endl;
+                break;
+            case 9:
+                cout << "your queue is "<<endl ;
+                QueueTraverse(Q);
+                cout << endl;
+                break;
+            default:
+                break;
+
+        }
     }
 }

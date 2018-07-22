@@ -16,7 +16,7 @@ Status DestroyQueue(Queue &);
 Status QueueEmpty(Queue &);
 Status QueueLength(Queue &);
 Status GetHead(Queue &Q, Status e);
-
+void QueueTest();
 Status EnQueue(Queue &Q, Status e);
 Status DeQueue(Queue &Q, Status e);
 void QueueTraverse();
