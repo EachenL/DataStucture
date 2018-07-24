@@ -16,7 +16,7 @@ Status StackPop(SeqStack &S, SElemType &e);
 void Conversion();
 Status DestroyStack();
 Status StackTraverse();
-
+void CptAvgScore();
 
 
 Status ClearStack();
