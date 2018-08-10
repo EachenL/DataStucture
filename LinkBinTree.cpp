@@ -5,7 +5,7 @@
 Status InitLBT(BitNodePtr &T){}
 Status CreLBT(BitNodePtr &T){}
 Status DesLBT(BitNodePtr &T){}
-Status ClearLBT(BitNodePtr &T){}Status InitLBT(BitNodePtr &T){}
+Status ClearLBT(BitNodePtr &T){}
 Status DepthLBT(BitNodePtr T){}
 Status RootLBT(BitNodePtr T){}
 Status ValueLBT(BitNodePtr T){}
