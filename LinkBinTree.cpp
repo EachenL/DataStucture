@@ -21,16 +21,16 @@ Status CreLBT(BitNodePtr &T){
 
 }
 Status PreCreLBT(BitNodePtr T){//T need Init
-    char n;
+    int n;
     cin >> n;
-    if(n != ' '){
+    if(n != 0){
         T->data = n;
         InitLBT(T->lchild);
         T = T->lchild;
-        PreTraLBT(T);
+        PreCreLBT(T);
         InitLBT(T->rchild);
         T = T->rchild;
-        PreTraLBT(T);
+        PreCreLBT(T);
     }
     free(T);
 }
