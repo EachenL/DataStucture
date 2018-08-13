@@ -9,7 +9,7 @@ typedef struct BitNode{
 #ifndef DATASTUCTURE_LINKBINTREE_H
 #define DATASTUCTURE_LINKBINTREE_H
 Status InitLBT(BitNodePtr &T);
-Status PreCreLBT(BitNodePtr T);
+Status PreCreLBT(BitNodePtr &T);
 Status PreTraLBT(BitNodePtr T);
 Status Visit(BitNodePtr T);
 Status InTraLBT(BitNodePtr T);

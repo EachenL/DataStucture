@@ -20,19 +20,18 @@ Status CreLBT(BitNodePtr &T){
     }
 
 }
-Status PreCreLBT(BitNodePtr T){//T need Init
+Status PreCreLBT(BitNodePtr &T){
+
     int n;
     cin >> n;
     if(n != 0){
+        T = (BitNodePtr)malloc(sizeof(BitNode));
         T->data = n;
-        InitLBT(T->lchild);
-        T = T->lchild;
-        PreCreLBT(T);
-        InitLBT(T->rchild);
-        T = T->rchild;
-        PreCreLBT(T);
+        PreCreLBT(T->lchild);
+        PreCreLBT(T->rchild);
     }
-    free(T);
+
+    return 0;
 }
 Status DesLBT(BitNodePtr &T){}
 Status ClearLBT(BitNodePtr &T){}
