@@ -14,4 +14,5 @@ Status PreTraLBT(BitNodePtr T);
 Status Visit(BitNodePtr T);
 Status InTraLBT(BitNodePtr T);
 Status PostTraLBT(BitNodePtr T);
+void SelLBTOpt(BitNodePtr &T);
 #endif //DATASTUCTURE_LINKBINTREE_H

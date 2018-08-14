@@ -17,7 +17,6 @@ int main() {
 //    cout << DubLinkGetElem(La, DubLinkLocElem(La, 3));
     BitNodePtr p;
 
-    PreCreLBT(p);
-    PreTraLBT(p);
+    SelLBTOpt(p);
     return 0;
 }

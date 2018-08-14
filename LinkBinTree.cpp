@@ -7,19 +7,7 @@ Status InitLBT(BitNodePtr &T){
     T->lchild = NULL;
     T->rchild = NULL;
 }
-Status CreLBT(BitNodePtr &T){
-    cout << "please input the node value:";
-    char n;
-    cin >> n;
-    BitNodePtr P;
-    P = T;
-    while(n != ' '){
-        InitLBT(P);
-        P->data = n;
 
-    }
-
-}
 Status PreCreLBT(BitNodePtr &T){
 
     int n;
@@ -70,4 +58,35 @@ Status PostTraLBT(BitNodePtr T){
 Status LevelTraLeT(BitNodePtr T){}
 Status Visit(BitNodePtr T){
     cout << T->data;
+}
+void SelLBTOpt(BitNodePtr &T){
+    int n = 1;
+    while(n != 0){
+        cout << "please choose your option" << endl << "1.Init" <<endl<<"2.Pre Cre"<<endl<<"3.Pre Tra"<<endl<<"4.In Tra"<<endl<<"5.Post Tra"<<endl;
+        cin >> n;
+        switch(n){
+            case 1:
+                InitLBT(T);
+                cout << "Init success "<<endl;
+                break;
+            case 2:
+                cout << "please input your tree:"<<endl;
+                PreCreLBT(T);
+                cout << "you have cre a bin tree"<<endl;
+                break;
+            case 3:
+                PreTraLBT(T);
+                cout<<endl;
+                break;
+            case 4:
+                InTraLBT(T);
+                cout<<endl;
+                break;
+            case 5:
+                PostTraLBT(T);
+                cout<<endl;
+                break;
+            default:break;
+        }
+    }
 }
