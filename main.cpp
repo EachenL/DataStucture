@@ -1,8 +1,5 @@
 #include <iostream>
-//#include "LinkList.h"
-#include "DobLinkList.h"
-#include "SeqStack.h"
-#include "Queue.h"
+#include "FuncHead.h"
 int main() {
 //    LinkList La;
 //    LinkList Lplub;
@@ -18,6 +15,9 @@ int main() {
 //    DubLinkTra(La);
 //    cout << DubLinkLocElem(La, 3);
 //    cout << DubLinkGetElem(La, DubLinkLocElem(La, 3));
-    CptAvgScore();
+    BitNodePtr p;
+
+    PreCreLBT(p);
+    PreTraLBT(p);
     return 0;
 }
