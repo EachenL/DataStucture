@@ -9,8 +9,13 @@ typedef struct ThreadNode{
 }ThreadNode, *ThreadNodePtr;
 #ifndef DATASTUCTURE_THREADNODE_H
 #define DATASTUCTURE_THREADNODE_H
-void PreCreThreadTree();
-void InitThreadNode();
-void InOrdTraThreadTree();
-void InOrdIndexTreadTree();
+void PreCreThreadTree(ThreadNodePtr &T);
+void InitThreadNode(ThreadNodePtr &p);
+void FirstNodeInOrdTraThreadTree(ThreadNodePtr P);
+void InOrdIndexThreadTree(ThreadNodePtr &p, ThreadNodePtr &pre);
+ThreadNodePtr FirstNode(ThreadNodePtr p);
+ThreadNodePtr LastNode(ThreadNodePtr p);
+void InThread(ThreadNodePtr T);
+void TestThread();
+ThreadNodePtr NextNode(ThreadNodePtr p);
 #endif //DATASTUCTURE_THREADNODE_H
