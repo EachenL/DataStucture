@@ -6,6 +6,7 @@ Status InitLBT(BitNodePtr &T){
     T = (BitNodePtr)malloc(sizeof(BitNode));
     T->lchild = NULL;
     T->rchild = NULL;
+	return 0;
 }
 
 Status PreCreLBT(BitNodePtr &T){
@@ -21,24 +22,25 @@ Status PreCreLBT(BitNodePtr &T){
 
     return 0;
 }
-Status DesLBT(BitNodePtr &T){}
-Status ClearLBT(BitNodePtr &T){}
-Status DepthLBT(BitNodePtr T){}
-Status RootLBT(BitNodePtr T){}
-Status ValueLBT(BitNodePtr T){}
-BitNodePtr ParentLBT(BitNodePtr T, BitNodePtr E){}
-BitNodePtr LeftChildLBT(BitNodePtr T, BitNodePtr E){}
-BitNodePtr RightChildLBT(BitNodePtr T, BitNodePtr E){}
-BitNodePtr LeftBroLBT(BitNodePtr T, BitNodePtr E){}
-BitNodePtr RightBroLBT(BitNodePtr T, BitNodePtr E){}
-Status InsChild(BitNodePtr T, BitNodePtr P, int LR, BitNodePtr C){}
-Status DelChild(BitNodePtr T, int LR, BitNodePtr P){}
+//Status DesLBT(BitNodePtr &T){}
+//Status ClearLBT(BitNodePtr &T){}
+//Status DepthLBT(BitNodePtr T){}
+//Status RootLBT(BitNodePtr T){}
+//Status ValueLBT(BitNodePtr T){}
+//BitNodePtr ParentLBT(BitNodePtr T, BitNodePtr E){}
+//BitNodePtr LeftChildLBT(BitNodePtr T, BitNodePtr E){}
+//BitNodePtr RightChildLBT(BitNodePtr T, BitNodePtr E){}
+//BitNodePtr LeftBroLBT(BitNodePtr T, BitNodePtr E){}
+//BitNodePtr RightBroLBT(BitNodePtr T, BitNodePtr E){}
+//Status InsChild(BitNodePtr T, BitNodePtr P, int LR, BitNodePtr C){}
+//Status DelChild(BitNodePtr T, int LR, BitNodePtr P){}
 Status PreTraLBT(BitNodePtr T){
     Visit(T);
     if(T->lchild != NULL)
         PreTraLBT(T->lchild);
     if(T->rchild != NULL)
         PreTraLBT(T->rchild);
+	return 0;
 }
 Status InTraLBT(BitNodePtr T){
     if(T->lchild != NULL)
@@ -46,6 +48,7 @@ Status InTraLBT(BitNodePtr T){
     Visit(T);
     if(T->rchild != NULL)
         InTraLBT(T->rchild);
+	return 0;
 }
 
 Status PostTraLBT(BitNodePtr T){
@@ -54,10 +57,12 @@ Status PostTraLBT(BitNodePtr T){
     if(T->rchild != NULL)
         PostTraLBT(T->rchild);
     Visit(T);
+	return 0;
 }
-Status LevelTraLeT(BitNodePtr T){}
+Status LevelTraLeT(BitNodePtr T) { return 0; }
 Status Visit(BitNodePtr T){
     cout << T->data;
+	return 0;
 }
 void SelLBTOpt(BitNodePtr &T){
     int n = 1;

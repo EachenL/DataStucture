@@ -20,8 +20,8 @@ Status EnQueue(Queue &Q, Status e){
     }
     if (Q.head != NULL){
        *Q.tail++ = e;
-
     }
+	return 0;
 }
 Status GetHead(Queue &Q, Status e){
     if(QueueEmpty(Q) == ERROR)

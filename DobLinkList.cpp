@@ -22,7 +22,7 @@ Status DubLinkIns(DubLinkList &L, int i, Elemtype e){
 }
 /****************************Double-Link-Delete*****************************/
 Status DubLinkDel(DubLinkList &L, int i){
-
+	return 0;
 }
 /*****************************Double-Link-Create********************************/
 Status DubLinkCreate(DubLinkList &L){
