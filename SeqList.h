@@ -1,7 +1,7 @@
 //
 // Created by markning on 4/28/18.
+// Ë³Ðò±í
 //
-//#include "LinkList.h"
 #include "head.h"
 
 typedef struct{

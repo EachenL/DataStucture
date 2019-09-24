@@ -1,5 +1,6 @@
 //
 // Created by markning on 4/30/18.
+// À≥–Ú’ª
 //
 #include "head.h"
 typedef struct{
@@ -7,6 +8,7 @@ typedef struct{
     SElemType *top;
     int stackSize;
 }SeqStack;
+
 #ifndef DATASTUCTURE_SEQSTACK_H
 #define DATASTUCTURE_SEQSTACK_H
 Status InitStack(SeqStack &S);

@@ -1,5 +1,6 @@
 //
 // Created by markning on 4/28/18.
+// Ë³Ðò±í
 //
 
 #include "SeqList.h"

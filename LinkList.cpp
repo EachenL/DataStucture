@@ -1,5 +1,6 @@
 //
 // Created by markning on 4/28/18.
+// 单链表
 //
 #include "LinkList.h"
 

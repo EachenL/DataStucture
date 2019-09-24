@@ -2,6 +2,7 @@
 
 //
 // Created by markning on 4/29/18.
+// Ë«Á´±í
 //
 typedef struct DubNode{
     Elemtype data;

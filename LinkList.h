@@ -1,8 +1,10 @@
-#include "head.h"
+
 
 //
 // Created by markning on 4/28/18.
+// µ¥Á´±í
 //
+#include "head.h"
 typedef struct LNode{
     Elemtype data;
     struct LNode *next;

@@ -1,5 +1,6 @@
 //
 // Created by markning on 7/22/18.
+// ╤сап
 //
 #include "head.h"
 typedef struct {
