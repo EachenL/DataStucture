@@ -1,20 +1,10 @@
 #include <iostream>
 #include "FuncHead.h"
 int main() {
-//    LinkList La;
-//    LinkList Lplub;
-//    LinkList Lc;
-//    CreateLinkList(La, 5);
-//    CreateLinkList(Lb, 5);
-//    LinkListIns(La, 3, 3);
-//    MergeLinkList(La, Lb, Lc);
-//    TraLinkList(Lc);
-//    free(Lb);
-//    DubLinkList La;
-//    DubLinkCreate(La);
-//    DubLinkTra(La);
-//    cout << DubLinkLocElem(La, 3);
-//    cout << DubLinkGetElem(La, DubLinkLocElem(La, 3));
-    TestThread();
+	int R[9];
+	GenArray(R, 9);
+	InsertSort(R, 9);
+	CoutArray(R);
+	while (1);
     return 0;
 }

@@ -21,6 +21,7 @@ typedef int SElemType;
 typedef int Elemtype;
 typedef int Status;
 typedef int QElemType;
+#include <time.h>
 #ifndef DATASTUCTURE_HEAD_H
 #define DATASTUCTURE_HEAD_H
 
