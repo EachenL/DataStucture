@@ -187,7 +187,7 @@ TBTNodePtr Next(TBTNodePtr p) {//返回中序线索二叉树中节点p的后继节点
 
 void Inorder(TBTNodePtr root) {//遍历中序线索二叉树
     for (TBTNodePtr p = First(root); p != NULL; p = Next(p))
-        visit(p);
+        visit(p);//
 }
 
 
