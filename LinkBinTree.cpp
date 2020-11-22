@@ -144,9 +144,9 @@ void PreOrderNonrecursion(BitNodePtr bt) {//Ê¹ÓÃÕ»ÊµÏÖÏÈÐò·ÇµÝ¹é±éÀúÊ÷
 
 void InThread(TBTNodePtr p, TBTNodePtr& pre) {//ÖÐÐò¶þ²æÊ÷ÏßË÷»¯º¯Êý, ÆäÖÐpreÎªÒýÓÃÀàÐÍ
     if (p != NULL) {                          //ÒòÎªÐèÒªÔÚÉÏÒ»²ãµÝ¹éÖÐÊ¹ÓÃÏÂÒ»²ã¸³¸øµÄÖµ
-        InThread(p->lchild, pre);
+        InThread(p->lchild, pre);//×ó×ÓÊ÷ÏßË÷»¯
         if (p->lchild == NULL) {
-            p->lchild = pre;
+            p->lchild = pre;//ÕâÀï»áÓÃµ½pre±äÁ¿, Èô²»ÊÇÒýÓÃÀàÐÍ, ÄÇÃ´ÔÚÏÂÃæµÄÏßË÷»¯ÖÐ¾Í²»»á°ÑÏÂ²ãµÄpre´«µÝµ½ÉÏ²ã
             p->ltag = 1;
 
         }
@@ -156,7 +156,53 @@ void InThread(TBTNodePtr p, TBTNodePtr& pre) {//ÖÐÐò¶þ²æÊ÷ÏßË÷»¯º¯Êý, ÆäÖÐpreÎªÒ
 
         }
         pre = p;
-        InThread(p->rchild, pre);
+        InThread(p->rchild, pre);//ÓÒ×ÓÊ÷ÏßË÷»¯
 
     }
 }
+
+void CreateInThread(TBTNodePtr root) {//½«ÆÕÍ¨¶þ²æÊ÷ÏßË÷»¯µÄÖ÷³ÌÐò
+    TBTNodePtr pre = NULL;//preÖ¸Õë, µÝ¹éÊ½¾ùÎªÒýÓÃ×´Ì¬
+    if (root != NULL) {
+        InThread(root, pre);
+        pre->rchild = NULL;//´¦ÀíÖÐÐò×îºóÒ»¸ö½Úµã
+        pre->rtag = 1;
+    }
+
+}
+
+TBTNodePtr First(TBTNodePtr p) {//·µ»ØÖÐÐòÏßË÷¶þ²æÊ÷µÚÒ»¸ö½Úµã
+    while (p->ltag == 0)
+        p = p->lchild;
+    return p;
+    
+}
+
+TBTNodePtr Next(TBTNodePtr p) {//·µ»ØÖÐÐòÏßË÷¶þ²æÊ÷ÖÐ½ÚµãpµÄºó¼Ì½Úµã
+    if (p->rtag == 0)
+        return First(p->rchild);
+    else
+        return p->rchild;
+}
+
+void Inorder(TBTNodePtr root) {//±éÀúÖÐÐòÏßË÷¶þ²æÊ÷
+    for (TBTNodePtr p = First(root); p != NULL; p = Next(p))
+        visit(p);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

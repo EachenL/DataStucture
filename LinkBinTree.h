@@ -22,6 +22,8 @@ Status PostTraLBT(BitNodePtr T);
 void SelLBTOpt(BitNodePtr &T);
 void level(BitNodePtr T);
 void visit(BitNodePtr T);
+void visit(TBTNodePtr T);
 void PreOrderNonrecursion(BitNodePtr T);
 void InThread(TBTNodePtr T);
+void CreateInThread(TBTNodePtr root);
 #endif //DATASTUCTURE_LINKBINTREE_H
