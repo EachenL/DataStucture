@@ -1,0 +1,12 @@
+# ninja log v5
+26	2123	627677151	CMakeFiles/DataStucture.dir/LinkQueue.cpp.obj	702dc64ee90f541d
+20	2256	627677151	CMakeFiles/DataStucture.dir/SeqStack.cpp.obj	4b9c2f3dae2fed37
+13	2287	627677151	CMakeFiles/DataStucture.dir/main.cpp.obj	d587883b8237be76
+32	2779	627677151	CMakeFiles/DataStucture.dir/Queue.cpp.obj	ffa6f2c6b7b11eb2
+38	2800	627677151	CMakeFiles/DataStucture.dir/LinkList.cpp.obj	c465e595082a544a
+1	3064	627677151	CMakeFiles/DataStucture.dir/SeqList.cpp.obj	c330669a306b30f
+2288	4398	627677153	CMakeFiles/DataStucture.dir/ThreadNode.cpp.obj	d138a7396b828f6c
+2257	4434	627677153	CMakeFiles/DataStucture.dir/LinkBinTree.cpp.obj	e8c321bbbc9b3ef8
+2787	4531	627677153	CMakeFiles/DataStucture.dir/Sort.cpp.obj	bb0422681a696c7b
+2147	4552	627677153	CMakeFiles/DataStucture.dir/DobLinkList.cpp.obj	c14f09304ab88a80
+4584	8366	627677156	DataStucture.exe	b54a5dcfb7161cf5
