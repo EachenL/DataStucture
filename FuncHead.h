@@ -5,6 +5,7 @@
 #include "LinkStack.h"
 #include "ThreadNode.h"
 #include "Sort.h"
+#include "map.h"
 #ifndef DATASTUCTURE_FUNCHEAD_H
 #define DATASTUCTURE_FUNCHEAD_H
 
