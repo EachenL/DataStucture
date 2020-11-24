@@ -16,7 +16,7 @@ typedef struct TBTNode {
 Status InitLBT(BitNodePtr &T);
 Status PreCreLBT(BitNodePtr &T);
 Status PreTraLBT(BitNodePtr T);
-Status Visit(BitNodePtr T);
+Status BitVisit(BitNodePtr T);
 Status InTraLBT(BitNodePtr T);
 Status PostTraLBT(BitNodePtr T);
 void SelLBTOpt(BitNodePtr &T);

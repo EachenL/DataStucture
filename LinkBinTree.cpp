@@ -36,7 +36,7 @@ Status PreCreLBT(BitNodePtr &T){
 //Status InsChild(BitNodePtr T, BitNodePtr P, int LR, BitNodePtr C){}
 //Status DelChild(BitNodePtr T, int LR, BitNodePtr P){}
 Status PreTraLBT(BitNodePtr T){
-    Visit(T);
+    BitVisit(T);
     if(T->lchild != NULL)
         PreTraLBT(T->lchild);
     if(T->rchild != NULL)
@@ -46,7 +46,7 @@ Status PreTraLBT(BitNodePtr T){
 Status InTraLBT(BitNodePtr T){
     if(T->lchild != NULL)
         InTraLBT(T->lchild);
-    Visit(T);
+    BitVisit(T);
     if(T->rchild != NULL)
         InTraLBT(T->rchild);
 	return 0;
@@ -57,11 +57,11 @@ Status PostTraLBT(BitNodePtr T){
         PostTraLBT(T->lchild);
     if(T->rchild != NULL)
         PostTraLBT(T->rchild);
-    Visit(T);
+    BitVisit(T);
 	return 0;
 }
 Status LevelTraLeT(BitNodePtr T) { return 0; }
-Status Visit(BitNodePtr T){
+Status BitVisit(BitNodePtr T){
     cout << T->data;
 	return 0;
 }

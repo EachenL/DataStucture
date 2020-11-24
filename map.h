@@ -49,12 +49,27 @@ typedef struct {//十字链表
 }OLGraph;
 
 /*邻接多重表*/
-typedef struct 
+typedef enum {unvisited, visited} VisitIf;
+typedef struct EBox {//边表结点
+	VisitIf mark;//表示是否已被搜索过 
+	int ivex, jvex;//该边连接的两个结点的位置
+	struct EBox* ilink, * jlink;//ilink指向下一条依附于顶点ivex的边
+	//jlink指向下一条依附于顶点jvex的边
+	int info;//该边权值
+}EBox;
+
+typedef struct VexBox {//顶点表结点
+	int data;//顶点数据域
+	EBox* firstedge;//边表结点的头指针
+}VexBox;
+
+typedef struct {
+	VexBox adjmulist[maxsize];
+	int vexnum, edgenum;//顶点数和边数
+}AMLGraph;
 
 
+void DFS(AGraph* G, int v);
 
-
-
-
-
+void BFS(AGraph* G, int v, int visit[maxsize]);
 
