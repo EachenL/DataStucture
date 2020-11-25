@@ -8,8 +8,8 @@ typedef struct {//邻接矩阵顶点数据类型
 }VertexType;
 
 typedef struct {//邻接矩阵的数据类型
-	int edges[maxsize][maxsize];//此图的邻接矩阵
-	int n, e;//图的顶点数和边数
+	int edges[maxsize][maxsize];//此图的邻接矩阵, 存入的数为连接情况或权值
+	int ver_num, side_num;//图的顶点数和边数
 	VertexType vex[maxsize];//存放顶点信息的数组
 }MGraph;
 
@@ -72,4 +72,14 @@ typedef struct {
 void DFS(AGraph* G, int v);
 
 void BFS(AGraph* G, int v, int visit[maxsize]);
+
+void Prim(MGraph g, int v0, int& sum);
+
+int getRoot(int a);
+
+void Kruskal(MGraph g, int& sum, Road road[]);
+
+void printfPath(int path[], int a);
+
+void Dijstra(MGraph g, int v, int dist[], int path[]);
 
