@@ -112,7 +112,7 @@ void Kruskal(MGraph g, int& sum, Road road[]) {
 		}
 	}
 }
-
+/*迪杰斯特拉算法*/
 void printfPath(int path[], int a) {
 	int stack[maxsize], top = -1;
 	while (path[a] != -1) {
@@ -124,7 +124,7 @@ void printfPath(int path[], int a) {
 		cout << stack[top--] << "";
 	cout << endl;
 }
-void Dijstra(MGraph g, int v, int dist[], int path[]) {
+void Dijkstra(MGraph g, int v, int dist[], int path[]) {
 	int set[maxsize];
 	int min, i, j, u;
 	for (i = 0; i < g.ver_num; ++i) {
